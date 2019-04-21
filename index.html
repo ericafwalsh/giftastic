@@ -4,9 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>GifTastic Moods</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../giftastic/app.js"></script>
     
+    <style type="text/css">
+        #button-form {
+          margin: 10px;
+        }
+        body {
+            background-color: #FFF5EE;
+        }
+      </style>
+
 </head>
 
 <header></header>
@@ -16,11 +26,11 @@
 
         <form id="button-form">
 
-          <label for="gif-input">Add a mood</label>
+          <label for="gif-input">Add a mood: </label>
 
-          <input type="text" id="gif-input"><br>
+          <input type="text" id="gif-input">
 
-          <input id="add-gif" type="submit" value="Submit">
+          <input id="add-gif" type="submit" value="Submit" type="button" class="btn btn-info">
 
         </form>
 
