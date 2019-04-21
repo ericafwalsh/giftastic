@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var topics = ["amused", "blissful", "calm as a cucumber", "meh", "pumped", "cheery", "fine", "bored", "ecstatic", "mad", "cranky", "grumpy", "confused"];
+    var topics = ["amused", "blissful", "calm", "meh", "pumped", "cheery", "fine", "bored", "ecstatic", "mad", "cranky", "grumpy", "confused"];
 
     function showMoods() {
 
