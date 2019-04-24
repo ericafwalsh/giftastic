@@ -1,7 +1,9 @@
 $(document).ready(function () {
 
+    // initial array of moods
     var topics = ["amused", "blissful", "calm", "meh", "pumped", "cheery", "fine", "bored", "ecstatic", "mad", "cranky", "grumpy", "confused"];
 
+    // Defining a function that makes buttons for anything in the "topics" array, and once that loop is done, adds a listener for calling the generateGifs function
     function showMoods() {
 
         $("#buttons-view").empty();
@@ -24,7 +26,7 @@ $(document).ready(function () {
 
     };
 
-
+// Defining a function that uses an ajax call to get gifs from giphy, and then creates a div, adds the gif and the gif's rating
     function generateGifs() {
 
         $("#gifs-appear-here").empty();
@@ -67,6 +69,7 @@ $(document).ready(function () {
 
                 }
 
+                // Gif pausing functionality
                 $("img").on("click", function () {
 
                     var state = $(this).attr("data-state");
@@ -84,7 +87,7 @@ $(document).ready(function () {
             });
     }
 
-
+    // when the "Add gif" button is click, the value that the user entered is added to the topics array and the showMoods function is called
     $("#add-gif").on("click", function (event) {
 
         event.preventDefault();
